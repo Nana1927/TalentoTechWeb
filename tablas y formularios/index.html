@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+       <table style="background-color: aqua;">
+        <tr style="background-color: blueviolet;">
+            <th style="background-color: brown; color: beige;">NOMBRE</th>
+            <th>CORREO</th>
+            <th>CIUDAD</th>
+            <th>EDAD</th>
+            <th>PROFESION</th>
+        </tr>
+        <tr style="border: 1px solid black;">
+            <td>Luis Gonzales</td>
+            <td>luis1029@gmail.com</td>
+            <td>Bogota</td>
+            <td>36</td>
+            <td>Administrador</td>
+        </tr>
+        <tr style="border: 1px solid blue;">
+            <td>Sonia Prada</td>
+            <td>pradason76@gmail.com</td>
+            <td>Medellin</td>
+            <td>24</td>
+            <td>Auxiliar enfermeria</td>
+        </tr>
+        <tr>
+            <td>Alberto Ochoa</td>
+            <td>albert67@gmail.com</td>
+            <td>Cali</td>
+            <td>59</td>
+            <td>Ingeniero</td>
+        </tr>
+        <tr>
+            <td>Maria Rodriguez</td>
+            <td>maar.ro@gmail.com</td>
+            <td>Tolima</td>
+            <td>43</td>
+            <td>Contadora</td>
+        <tr>
+            <td>Jose Paez</td>
+            <td>paesjose@gmail.com</td>
+            <td>Bogota</td>
+            <td>27</td>
+            <td>Conductor</td>
+        </tr>
+        <tr>
+            <td>Rosa Gongora</td>
+            <td>rosita54@gmail.com</td>
+            <td>Cali</td>
+            <td>19</td>
+            <td>Estudiante</td>
+        </tr>
+        <tr>
+            <td>Juan Diaz</td>
+            <td>juancho.14@gmail.com</td>
+            <td>Medellin</td>
+            <td>33</td>
+            <td>Ingeniero de sistemas</td>
+        </tr>
+        <tr>
+            <td>Angelica Duarte</td>
+            <td>angelduart@gmail.com</td>
+            <td>Cartagena</td>
+            <td>41</td>
+            <td>Arquitecta</td>
+        </tr>
+        <tr>
+            <td>Abraham Alvarino</td>
+            <td>alvarinabraham@gmail.com</td>
+            <td>Tolima</td>
+            <td>28</td>
+            <td>Independiente</td>
+        </tr>
+        <tr>
+            <td>Irma Orjuela</td>
+            <td>irmisor@gmail.com</td>
+            <td>Bogota</td>
+            <td>53</td>
+            <td>Ama de casa</td>
+        </tr>
+       </table>
+       <hr>
+<!--formulario-->
+<form method="post">
+    <label for="">Nombre</label>
+    <input type="text" placeholder="Nombre"required name="Nombre">
+    <br>
+    <label for="">Fecha de nacimiento</label>
+    <input type="date"required max="2024-05-02" min="1900.01-01" name="fecha_nacimiento">
+    <br>
+    <label for="">Ingresos mensuales</label>
+    <input type="number" placeholder="Salario mensual" name="Salario">
+    <br>
+    <label for="">Correo electrónico</label>
+    <input type="email" required placeholder="Ingresar Email" name="Email">
+    <br>
+    <label for="">Subir cv</label>
+    <input type="file" required name="cv">
+    <br>
+    <label for=""> Password</label>
+    <input type="password" required name="password">
+    <br>
+    <label for="">Hora de ingreso</label>
+    <input type="time" required name="hora_ingreso">
+    <br>
+    <label for="">Mes de ingreso a ña empresa</label>
+    <input type="month" required name="mes_ingreso"></input>
+    <br>
+    <label for="">Color del uniforme</label>
+    <input type="color" name="color_uniforme">
+    <br>
+    <label for=""> Genero</label>
+    <input type="radio" name="Genero" value="Femenino"required>
+    <label for=""> Femenino</label>
+    <input type="radio" name="Genero" value="Masculno"required>
+    <label for="">Masculino</label>
+    <br>
+    <label for="">Dias laborados</label>
+    <input type="checkbox" name="Dias" value="Lunes">
+    <label for="">Lunes</label>
+    <input type="checkbox" name="Dias" value="Martes">
+    <label for="">Martes</label>
+    <input type="checkbox" name="Dias" value="Miercoles">
+    <label for="">Miercoles</label>
+    <input type="checkbox" name="Dias" value="Jueves">
+    <label for="">Jueves</label>
+    <input type="checkbox" name="Dias" value="Viernes">
+    <label for="">Viernes</label>
+    <input type="checkbox" name="Dias" value="Sabado">
+    <label for="">Sabado</label>
+    <input type="checkbox" name="Dias" value="Domingo">
+    <label for="">Domingo</label>
+    <br>
+    <label for="">Link de perfil linkedin</label>
+    <input type="url"required name="link_perfil">
+    <br>
+    <label for="">Telefono</label>
+    <input type="tel"required name="Telefono">
+    <br>
+    <label for="">Escoja una ciudad</label>
+    <select name="id">
+        <option value="">-</option>
+        <option value="Cali">Cali</option>
+        <option value="Bogota">Bogota</option>
+        <option value="Cartagena">Cartagena</option>
+        <option value="Medellin">Medellin</option>
+        <option value="Tolima">Tolima</option>
+    </select>
+    <br>
+    <fieldset>
+        <legend>Informacion general</legend>
+        <br>
+    <label for="">Descripcion del perfil</label>
+    <textarea name="id" cols="30" rows="10"></textarea>
+    <br>
+    <label for="">Tipo de documento</label>
+    <input list="documento" name="documento">
+    <datalist id="documento">
+        <option value="Cedula">Cedula</option>
+        <option value="Targeta de identidad">Targeta de identidad</option>
+        <option value="Pasaporte">Pasaporte</option>
+    </datalist>
+    <br>
+    <label for="">Numero</label>
+    <input type="number" name="number">
+    </fieldset>
+    <button>Enviar</button>
+</form>
+    </div>
+</body>
+</html>

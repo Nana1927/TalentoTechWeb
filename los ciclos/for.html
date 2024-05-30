@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /**imprimir los numeros del 1 al 10*/
+    inicio; salida; incremento 
+
+    /**para cada elemento que comienza en 0 y va hasta un valor 
+     * menor o igual que 10, aumentando de 2 en 2
+     * entonces hacer*/
+
+    for(var num = 0; num<=10; num+=2){
+        document.write("el numero es: " + num + "<br>")
+    }
+
+    /** cronometro */
+    /** para cada elemento comenzando en 10 y que va hasta un valor
+     * mayor que 0, disminuyendo de 1 en 1
+     * entonces hacer */
+
+    for(var i=10; i>0; i--){
+        document.write("tick tack " + i + "<br>")
+    }
+    document.write("boom")
+
+    /** hacer un algoritmo que calcule el factorial de un numero */
+    var num = parseInt(prompt("ingrese el numero: "))
+    var factorial = 1
+    for(var i = num; i>0; i--){
+        factorial = factorial*i
+    }
+    document.write("el factorial de " + num + " es " + factorial)
+
+    /**implementar un algoritmo que reciba un numero, e imprima la tabla
+     * de multiplicar de dicho numero hasta 10, con el siguiente formato:
+     * n*1 = ?
+     * n*2 = ?
+     * */
+
+    var num = parseInt(prompt("ingrese el numero"))
+    var Multiplicacion
+    for ( var i=1; i<=10; i++){
+        Multiplicacion = i*num
+        document.write(num + "*" + i + "=" + Multiplicacion + "<br>")
+    }
+
+    /**implementar un algoritmo que reciba un numero
+     * e imprima de sus  numeros anteriores mayores que 0 
+     * cuales son pares, cuales impares y cuales son multiplos de 3 */
+
+    var num = parseInt(prompt("ingrese el numero:"))
+    var texto = ""
+    for(var i=num; i>0; i--){
+        if(i%2 == 0){
+            texto = i + "es par <br>"
+        }else{
+            texto = i + "es impar <br>"
+        }
+        if(i%3 == 0){
+            texto = texto + i + "es multiplo de 3 <br>"
+        }
+        document.write(texto)
+    }
+
+    /** implementar un algoritmo que determine si un numero ingresado es primo */
+    1 - num
+    var num = parseInt(prompt("ingrese el numero"))
+    var divisores = 0
+    for ( var i = 1; i<=num; i++){
+        if (num%i == 0){
+            divisores++
+        }
+    }
+
+    if(divisores>2){
+        document.write("el numero No es primo")
+    }else{
+        document.write("el numero es primo")
+    }
+
+    /** implementar un algoritmo que me reciba un numero e imprima una 
+     * escalera de *, como la siguiente, de acuerdo al numero ingresado:
+     * +
+     * ++
+     * +++
+     * ++++
+     * +++++
+     * */
+    var num = parseInt(prompt("ingrese el numero"))
+    var escalera = ""
+    for(var i=1; i<=num; i++){
+        escalera = escalera+"*"
+        escalera += "*"
+        document.write(escalera + "<br>")
+    }
+
+    /** implementar un algoritmo que reciba un numero del mes
+     * y muestre todos los meses anteriores, incluyendolo */
+    var numeroMes = parseInt(prompt("ingrese el numero del mes"))
+
+    for(var i=1; i<=numeroMes; i++){
+        switch(i){
+            case 1:
+                document.write("Enero <br>")
+                break;
+            case 2:
+                document.write("Febrero <br>")
+                break;
+            case 3:
+                document.write("Marzo <br>")
+                break;
+            case 4:
+                document.write("Abril <br>")
+                break;
+            case 5:
+                document.write("Mayo <br>")
+                break;
+            case 6:
+                document.write("Junio <br>")
+                break;
+            case 7:
+                document.write("Julio <br>")
+                break;
+        }    
+    }
+
+    /**implementar un algoritmo que cuente cuantos numeros multiplos
+     * de 7 hay entre 1 y 100 */
+
+    var multiplosDe7 = 0
+    for(var i=1; i<=100; i++){
+        if(i%7 == 0){
+            multiplosDe7++
+        }
+    }
+    document.write("la cantidad de multiplos de 7 es: " + multiplosDe7)
+</script>
+</html>

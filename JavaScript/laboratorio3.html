@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /** ejrcicio 1
+     * verificar si un numero es positivo, negativo o cero
+     * escribe un programa que solicite un numero al usuario y luego
+     * imprima un mensaje indicando si el numero es positivo, negativo o cero.*/
+
+// var numero = parseFloat(prompt("ingrese el numero"))
+// if(numero == 0){
+//     mensaje = "Cero"
+// }else if(numero > 0){
+//     mensaje = "Positivo"
+// }else{
+//     document.write("el numero es: " + "Negativo")
+// }
+// document.write("el numero es: " + mensaje)
+
+
+/** ejercicio 2
+ * determinar si un numero es par o impar
+ * escribe un programa que solicite un numero al usuario y luego
+ * imprima un mensaje indicando si el numero es par o impar*/
+
+// var numero = parseFloat(prompt("ingrese el numero")) 
+// if(numero %2 == 0){
+//     document.write("el numero ingresado es: par")
+// }else{
+//     document.write("el numero ingresado es: impar ")
+// }
+
+/** ejercicio 3
+ * validar la edad para votar
+ * escribe un programa que solicita la edad del usuario y luego
+ * imprima un mensaje indicando si la persona es mayor de edad (18 años o mas y puede votar)*/
+
+// var edad = parseFloat(prompt("ingrese su edad")) 
+// var puedevotar = edad >= 18
+// if(edad >= 18){
+//     document.write("Mayor de edad, puede votar: " + puedevotar)
+// }else{
+//     document.write("Menor de edad no puede votar: " + puedevotar)
+// }
+
+/** ejercicio 4
+ * determinar el mayor de dos numeros
+ * escribe un programa que solicite dos numeros al usuario y luego
+ * imprima cuel de ellos es mayor o si son iguales.*/
+
+//  var num1 = parseFloat(prompt("ingrese el primer numero"))
+//  var num2 = parseFloat(prompt("ingrese el segundo numero"))
+//  if(num1 > num2){
+//     document.write("el primer numero es: > " + num2)
+//  }else if(num1==num2){
+//     document.write("los dos numeros son: =")
+//  }else{
+//     document.write("el segundo numero es: > " + num1)
+//  }
+    
+ 
+
+/** ejercicio 5
+ * calcular descuento en una compra
+ * escribe un programa que solicite el monto de una compra y luego
+ * aplique un descuento del 10% si el monto es mayor a $100*/
+
+var precio = parseFloat(prompt("ingrese el monto de la compra"))
+var descuento = 10
+var valorapagar = 0
+if(precio > 100){
+    valorapagar = precio - precio * 0.1
+}else{
+    (valorapagar = precio)
+}
+document.write("La totalidad que debe pagar es: " + valorapagar)
+
+/**ejercicio 6
+ * convertir un numero a un dia de la semana {switch}
+ * escribe un programa que solicite un numero del 1 al 7 y muestre el dia correspondiente
+ * de la semana  (1= Lunes, 2= Martes, etc)*/
+
+//  var numeroSemana = parseInt(prompt("ingrese el numero de la semana"))
+//  var nombreSemana = ""
+//  if(numeroSemana > 0 && numeroSemana <= 7){
+//    switch(numeroSemana){
+//     case 1:
+//         nombreSemana = "Lunes"
+//         break;
+//     case 2:
+//         nombreSemana = "Martes"
+//         break;
+//     case 3:
+//         nombreSemana = "Miercoles"
+//         break;
+//     case 4:
+//         nombreSemana = "Jueves"
+//         break;
+//     case 5:
+//         nombreSemana = "Viernes"
+//         break;
+//     case 6:
+//         nombreSemana = "Sabado"
+//         break;
+//     case 7:
+//         nombreSemana = "Domingo"
+//         break;
+//    }
+//    document.write("El dia ingresado es: " + nombreSemana)
+//  }else{
+//     document.write("el dia ingresado no es valido")
+//  }
+
+
+/** ejercicio 7 
+ * determinar la estacion del año segun el mes {switch}
+ * escribe un programa que solicite un numero de mes (1-12)y
+ * determine la estacion del año (primavera, verano, otoño, invierno).*/
+
+//  var numeroMes = parseInt(prompt("ingrese el numero del mes"))
+//  var nombreMes = ""
+//  var nombreEstacion = ""
+//  if(numeroMes > 0 && numeroMes <= 12){
+//     switch(numeroMes){
+//     case 1:
+//         nombreMes = "Enero"
+//         nombreEstacion = "verano"
+//         break;
+//     case 2:
+//         nombreMes = "Febrero"
+//         nombreEstacion = "Verano"
+//         break;
+//     case 3:
+//         nombreMes = "Marzo"
+//         nombreEstacion = "Otoño"
+//         break;
+//     case 4:
+//         nombreMes = "Abril"
+//         nombreEstacion = "Otoño"
+//         break;
+//     case 5:
+//         nombreMes = "Mayo"
+//         nombreEstacion = "Otoño"
+//         break;
+//     case 6:
+//         nombreMes = "Junio"
+//         nombreEstacion = "Invierno"
+//         break;
+//     case 7:
+//         nombreMes = "Julio"
+//         nombreEstacion = "Invierno"
+//         break;
+//     case 8:
+//         nombreMes = "Agosto"
+//         nombreEstacion = "Invierno"
+//         break;
+//     case 9:
+//         nombreMes = "Septiembre"
+//         nombreEstacion = "Primavera"
+//         break;
+//     case 10:
+//         nombreMes = "Octubre"
+//         nombreEstacion = "Primavera"
+//         break;
+//     case 11:
+//         nombreMes = "Noviembre"
+//         nombreEstacion = "Primavera"
+//         break;
+//     case 12:
+//         nombreMes = "Diciembre"
+//         nombreEstacion = "Verano"
+//         break;
+//     }
+//     document.write("el mes ingresado es: " + nombreMes + nombreEstacion)
+//  }else{
+//     document.write("el mes ingresado no es valido")
+//  }
+        
+</script>
+</html>

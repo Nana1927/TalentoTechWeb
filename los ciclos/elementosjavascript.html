@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="seccion1">
+        seccion 1
+    </div>
+    <div id="seccion2">
+        seccion 2
+    </div>
+    <form action="">
+        <label for="">nombre</label>
+        <input type="text" id="nombre">
+        <label for="">Descripcion</label>
+        <textarea id="descripcion"></textarea>
+        <button type="button" onclick="saludar()">Enviar</button>
+        <hr>
+        <label for="">seccion</label>
+        <select name="" id="seccion_seleccionada">
+            <option value="seccion1">1</option>
+            <option value="seccion2">2</option>
+        </select>
+        <label for="">tamaño</label>
+        <select name="" id="size">
+            <option value="100px">pequeño</option>
+            <option value="200px">mediano</option>
+            <option value="300px">grande</option>
+        </select>
+        <button type="button" onclick="cambiarcolor('green')">verde</button>
+        <button type="button" onclick="cambiarcolor('blue')">azul</button>
+
+        <button type="button" onclick="cambiarcolor('red')">rojo</button>
+        <button type="button" onclick="cambiarcolor('yellow')">amarillo</button>
+    </form>
+</body>
+<script>
+
+    function saludar(){
+        var nombre = document.getElementById("nombre").value
+        var descripcion = document.getElementById("descripcion").value
+        document.getElementById("seccion1").style.backgroundColor = "red"
+        alert("Hola " + nombre)
+    }
+    function cambiarcolor(color){
+        //obtenemos el valor del selector
+        var seccionSeleccionada = document.getElementById("seccion_seleccionada").value
+        //obtenemos el tamaño seleccionado
+        var tamaño = document.getElementById("size").value
+        //cambiamos el tamaño
+        document.getElementById(seccionSeleccionada).style.width = tamaño
+        document.getElementById(seccionSeleccionada).style.height = tamaño
+        //cambiamos el color de fondo
+        document.getElementById(seccionSeleccionada).style.backgroundColor = color
+        //cambiamos el color del texto
+        document.getElementById(seccionSeleccionada).style.color = 'white'
+    }
+</script>
+</html>

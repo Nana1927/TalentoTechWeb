@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <div class="selector-tema">
+        <select name="" id="tema" onchange="cambiarTema()">
+            <option value="light">claro</option>
+            <option value="dark">oscuro</option>
+            <option value="crazy">loco</option>
+        </select>
+    </div>
+    <div align="center">
+        <img class="imagen1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr1XSwtJLWmkQnv6XVQNv_VnV0Pz82bfk9s8jwitFC02y2idezKxguarSJ3dWaUDKprtg&usqp=CAU">
+    </div>
+
+    <div>
+        <h1 class="text-titulo">AMAZON</h1>
+        <div>
+            <p class="alineacion-texto">
+                corporación estadounidense de comercio electrónico y servicios de computación en la nube a todos los niveles con sede en la ciudad de Seattle, Washington. Su lema es: From A to Z (De la A a la Z). Es una d las primeras grandes compañías en vender bienes a través de Internet.
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <h2>Servicios</h2>
+        <p>
+            se dedica al comercio electrónico y a los servicios de computación en la nube, así como:
+        </p>
+        <ul>
+            <li>Productos de sofware</li>
+            <Li>Musica</Li>
+            <li>Video juegos</li>
+            <li>Electronica</li>
+            <li>Libros</li>
+            <li>Ropa</li>
+            <li>Muebles</li>
+            <li>Comida</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Datos de contacto</h2>
+        <ul>
+            <legend>Pagina oficial: www.amazon.com 
+            <legend>Telefono: 6012437865 </legend>
+        </ul>
+    </div>
+
+    <div>
+        <iframe src="https://www.youtube.com/embed/NrmMk1Myrxc?si=9qu3JNn6KNgm5NaJ&amp;start=11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div>
+        <h2>Formulario de contacto</h2>
+        <form action="">
+            <label for="">Nombre</label>
+            <input type="text" name="nombre"><br>
+            <label for="">Cedula</label>
+            <select name="Tipo de documento" id="">
+                <option value="id">id</option>
+                <option value="Tarjeta de identidad">Tarjeta de identidad</option>
+                <option value="cedula de ciudadania">Cedula de ciudadania</option>
+                <option value="Pasaporte">Pasaporte</option>
+            </select><br>
+            <label for="">Numero</label>
+            <input type="number" name="Numero"><br>
+            <label for="">Ciudad</label>
+            <select name="Ciudad" id="">
+                <option value="C">C</option>
+                <option value="Bogota">Bogota</option>
+                <option value="Chia">Chia</option>
+                <option value="Sogamozo">Sogamozo</option>
+            </select><br>
+            <label for="">Telefono</label>
+            <input type="text" required placeholder="Numero" name="Telefono"><br>
+            <label for="">Direccion</label>
+            <input type="text"required placeholder="Direccion" name="Direccion"><br>
+            <label for="">Correo electrónico</label>
+            <input type="email" required placeholder="Ingresar Email" name="Email"><br>
+            <label for="">Documento anexos</label>
+            <input type="file" required name="anexos"><br>
+            <label for="">Fecha de nacimiento</label>
+            <input type="date"required max="2024-05-02" min="1900.01-01" name="fecha_nacimiento"><br>
+            <button>Enviar</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Ventas del año 2023</h2>
+        <table id="estilo-tabla">
+            <tr>
+                <th>Mes</th>
+                <th>Ventas</th>
+            </tr>
+            <tr>
+                <td>Enero</td>
+                <td>300.000.000</td>
+            </tr>
+            <tr>
+                <td>Febrero</td>
+                <td>550.000.000</td>
+             </tr>
+             <tr>
+                <td>Marzo</td>
+                <td>795.000.000</td>
+            </tr>
+            <tr>
+                <td>Abril</td>
+                <td>1.030.000.000</td>
+            </tr>
+            <tr>
+                <td>Mayo</td>
+                <td>1.260.000.000</td>
+            </tr>
+            <tr>
+                <td>Junio</td>
+                <td>1.590.000.000</td>
+            </tr>
+            <tr>
+                <td>Julio</td>
+                <td>1.995.000.000</td>
+            </tr>
+            <tr>
+                <td>Agosto</td>
+                <td>2.465.000.000</td>
+            </tr>
+            <tr>
+                <td>Septiembre</td>
+                <td>2.798.000.000</td>
+            </tr>
+            <tr>
+                <td>Octubre</td>
+                <td>3.122.000.000</td>
+            </tr>
+            <tr>
+                <td>Noviembre</td>
+                <td>3.923.000.000</td>
+            </tr>
+            <tr>
+                <td>Diciembre</td>
+                <td>4.873.000.000</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+<script>
+    function cambiarTema(){
+        //elemento que va cambiar
+        var body = document.getElementById("body")
+        //el valor del selector de temas
+        var tema = document.getElementById("tema").value
+        var fondo = ""
+        var letra = ""
+        if(tema == "light"){
+            fondo = "white"
+            letra = "black"
+        }else if(tema == "dark"){
+            fondo = "black"
+            letra = "white"
+        }else if(tema == "crazy"){
+            fondo = "green"
+            letra = "blue"
+        }
+        body.style.backgroundColor = fondo
+        body.style.color = letra
+    }
+</script>
+
+<style>
+.imagen1 {
+    width: 40%;
+    border-radius: 100px;
+    border: 1px solid yellow;
+    padding: 10px;
+    margin: 10px;
+    outline-color: orange;
+    outline-style: solid;
+    box-shadow: 5px 1px 20px orangered;
+}
+
+.text-titulo {
+    color: black;
+    text-shadow: 2px 2px 5px #df3b51f8;
+    font-family: "audiowide", Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 60px;
+}
+
+h2{
+    color: rgba(255, 38, 0, 0.829);
+    font-family: "audiowide", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+}
+
+form {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+input, select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 3px;
+    display: inline-block;
+    border: 2px solid #df3b51f8;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    border-radius: 5px;
+    color: black (46, 32, 7, 0.322);
+    background-color: rgb(223, 182, 233);
+    padding:  10px 20px;
+    width: 35%;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(53, 94, 226);
+}
+
+table#estilo-tabla {
+    border: 1px solid;
+    width: 70%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid;
+    padding: 10px;
+    border-color: hsl(0, 92%, 48%);
+}
+
+table#estilo-tabla tr:nth-child(even) {
+    background-color: #f0d0d0;
+}
+
+table#estilo-tabla tr:hover {
+    background-color: #e73e8d;
+    color: aliceblue;
+}
+
+table#estilo-tabla th {
+    background-color: #f80cbd;
+    color: rgb(211, 228, 56);
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+ul>li {
+    list-style-type: circle;
+    background-color: white;
+    margin-left: 20px;
+}
+
+ul {
+    background-color: tomato;
+    opacity: 0.90;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+</style>
+</html>

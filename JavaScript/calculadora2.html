@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /** crear in algoritmo que reciba el alto y el ancho de un rectangulo y muestre en pantalla su area. */
+    // Ar = alto*ancho
+
+    var base = parseInt(prompt("ingrese la base del rectangulo: "))
+    var altura = parseInt(prompt("ingrese la altura del rectangulo: "))
+    var area = base*altura
+    document.write("el area del triangulo es: " + area)
+
+    /** crear un algoritmo que reciba el radio y calcule el area de un circulo.
+     * 1. investigar cual es la formula del area de un circulo 
+     * ac *pi*rA2
+     * 2. recibir el radio que ingrese el usuario por pantalla
+     * 3. crear una constante con el valor pi
+     * 4. implementar la formula para obtener el area
+     * 5. mostrar el resultado en pantalla
+    */
+   var radio = parseFloat(prompt("ingrese el radio del circulo")) //numero decimal
+   const pi = 3.1416
+   var areacirculo = pi*radio**2
+   document.write("el area del circulo es: " + areacirculo)
+
+   //calcular el indice de masa muscular
+
+   var peso = parseFloat(prompt("ingrese el peso: "))
+   var altural = parseFloat(prompt("ingrese la altura: "))
+   var imc = peso/altura**2
+   document.write("el imc de su peso es: " + peso + "y su altura es: " + altura + "el imc es igual a: " + imc)
+</script>
+</html>
